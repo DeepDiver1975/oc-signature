@@ -1,0 +1,22 @@
+{
+    "name": "deepdiver/oc-signature",
+    "description": "Tool to veritfy signatures",
+    "type": "library",
+    "require": {
+        "php": ">=5.6",
+        "symfony/console": "^3.2",
+        "phpseclib/phpseclib": "2.0.3"
+    },
+    "authors": [
+        {
+            "name": "Thomas Müller",
+            "email": "thomas.mueller@tmit.eu"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "OC\\Signature\\": "src/"
+        }
+    },
+    "bin": ["bin/oc-signature"]
+}
