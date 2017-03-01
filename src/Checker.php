@@ -22,7 +22,13 @@ class Checker {
     private $crl;
     private $crt;
 
-    public function __construct($crl, $crt) {
+    public function __construct($crl = null, $crt = null) {
+        if (is_null($crl)) {
+            $crl = __DIR__ . '/../resources/root.crt';
+        }
+        if (is_null($crt)) {
+            $crt = __DIR__ . '/../resources/intermediate.crl.pem';
+        }
         $this->crl = $crl;
         $this->crt = $crt;
     }
