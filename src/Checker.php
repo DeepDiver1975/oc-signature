@@ -24,10 +24,10 @@ class Checker {
 
     public function __construct($crl = null, $crt = null) {
         if (is_null($crl)) {
-            $crl = __DIR__ . '/../resources/root.crt';
+            $crl = __DIR__ . '/../resources/intermediate.crl.pem';
         }
         if (is_null($crt)) {
-            $crt = __DIR__ . '/../resources/intermediate.crl.pem';
+            $crt = __DIR__ . '/../resources/root.crt';
         }
         $this->crl = $crl;
         $this->crt = $crt;
