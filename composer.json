@@ -2,6 +2,7 @@
     "name": "deepdiver/oc-signature",
     "description": "Tool to veritfy signatures",
     "type": "library",
+    "version":"0.1.0",
     "require": {
         "php": ">=5.6",
         "symfony/console": "^3.2",
