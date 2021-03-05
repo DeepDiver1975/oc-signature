@@ -6,7 +6,7 @@
     "license":"AGPL-1.0",
     "require": {
         "php": ">=5.6",
-        "symfony/console": "^3.2",
+        "symfony/console": "4.4",
         "phpseclib/phpseclib": "2.0.3"
     },
     "authors": [
